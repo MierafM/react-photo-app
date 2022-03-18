@@ -33,11 +33,9 @@ class App extends React.Component {
         console.log(this.state)
         return (
             <div>
-                {this.state.user ? 
-                    <NavBar title="Photo App" username={this.state.user.username} />
-                    :
-                    <div></div>
-                }
+                
+                <NavBar title="Photo App" username={this.state.user.username} />
+
                 
 
                 <main id="mainContent">
