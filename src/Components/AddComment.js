@@ -17,7 +17,7 @@ class AddComment extends React.Component {
             "post_id": this.props.postId,
             "text": input
         };
-        fetch(`/api/comments`, {
+        fetch("https://photo-app-secured.herokuapp.com/api/comments", {
             headers: getHeaders(),
             method: 'POST',
             body: JSON.stringify(postData)
